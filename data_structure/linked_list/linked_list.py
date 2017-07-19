@@ -40,9 +40,10 @@ class LinkedList:
             self.num_data += 1
 
     def traverse(self, mode='next'):
+        if self.empty():
+            return None
+
         if mode == 'first':
-            if self.empty():
-                return None
             self.before = self.head
             self.current = self.head
         else:  # mode = 'next'
@@ -56,7 +57,6 @@ class LinkedList:
 
     def remove(self):
         ret_data = self.current.data
-        self.num_data -= 1
 
         # 1. 데이터가 하나일 경우
         if self.size() == 1:
@@ -78,6 +78,7 @@ class LinkedList:
             self.before.next = self.current.next
             self.current = self.before
 
+        self.num_data -= 1
         return ret_data
 
 

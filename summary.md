@@ -1,7 +1,30 @@
 # data structure & algorithm
 
+---
 
+컴퓨터공학(ComputerScience)의 5대과목: 
 
+프로그래밍언어 자료구조 알고리즘 CPU OS
+
+어샘블리를 알면 내부 구조를 잘 알 수 있다.
+
+---
+
+##### Foundation Knowledge Quiz
+
+- **Recursion, Index, Sort**. Binary Search
+- **Stack** / Heap
+- **Process / Thread**
+- **Call by Value:값에의해 호출, 인자를 전달할 때 값으로 전달(인자를 복사) / Call by Reference(주소값에 의해 호출, 인자를 전달할 때 참조로 전달)**
+	- *python은 Call by Assignment(처음에는 참조형이지만 새롭게 할당을 하면 참조형이 끊어진다. 따라서 할당에 의해 전달하기 때문에 Assignment라고 한다)*
+	- immutable: 튜플...
+	- mutable: 딕셔너리...
+
+- **Native Code**
+- MVC Architecture
+- **Write simple text-based games**
+
+---
 
 ## 자료 구조의 구성
 > 자료구조 : 데이터를 어떤 구조로 저장하고 탐색해야 가장 효율적인가? 
@@ -239,8 +262,23 @@ if __name__ == "__main__":
 ### stack, queue
 
 - stack, queue, (Priority Queue)
-- stack을 이용한 계산기 만들기
+	- stack : **LastInFirstOut**
 
+	- queue : 선입선출(FirstIn,FirstOut-FAIFO)
+
+#### Stack ADT : 
+- 1. push(data) -> None:"스텍에 쌓는다"
+- 2. pop() -> data: 맨위 데이터 삭제 -> 삭제된 데이터 반환
+- 3. empty() -> bool
+- 4. peek() -> data : 삭제는 아니고 맨 위의 데이터를 반환(확인)하는것
+
+#### queue ADT :
+- 1. enqueue(data) -> None: "insert" 맨 뒤에 추가
+- 2. dequeue() -> data : 맨앞 데이터 삭제 -> 삭제된 데이터 반환
+- 3. empty() -> bool
+- 4. peek() -> data : 삭제는 하지 않고 맨 앞 데이터 반환
+
+- stack을 이용한 계산기 만들기
 
 ### tree
 
