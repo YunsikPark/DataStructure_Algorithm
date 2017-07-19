@@ -49,7 +49,7 @@ class Calculator:
                 else:
                     while oprt_stack and self.get_weight(ch) <= self.get_weight(oprt_stack.peek()):
                         exp_list.append(oprt_stack.pop())
-                    exp_list.append(ch)
+                    oprt_stack.push(ch)
         while oprt_stack:
             exp_list.append(oprt_stack.pop())
 
