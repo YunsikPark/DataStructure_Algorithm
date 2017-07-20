@@ -71,7 +71,18 @@ class Calculator:
             return oprd1 // oprd2
 
     def calculate(self):
-        pass
+        oprd_stack = Stack()
+
+        for ch in self.get_postfix_exp():
+            if ch.isdigit():
+                oprd_stack.push(int(ch))
+            else:
+                oprd2 = oprd_stack.pop()
+                oprd1 = oprd_stack.pop()
+                oprd_stack.push(self.calc_two_pord(
+                    oprd1, oprd2, ch
+                ))
+        self.result = oprd_stack.pop()
 
     def get_result(self):
         if not self.result:

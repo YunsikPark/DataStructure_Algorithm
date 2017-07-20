@@ -1,5 +1,9 @@
 # data structure & algorithm
 
+> 양태환 강사     
+> ythwork83@gmail.com
+
+
 ---
 
 컴퓨터공학(ComputerScience)의 5대과목: 
@@ -266,19 +270,21 @@ if __name__ == "__main__":
 
 	- queue : 선입선출(FirstIn,FirstOut-FAIFO)
 
-#### Stack ADT : 
-- 1. push(data) -> None:"스텍에 쌓는다"
-- 2. pop() -> data: 맨위 데이터 삭제 -> 삭제된 데이터 반환
-- 3. empty() -> bool
-- 4. peek() -> data : 삭제는 아니고 맨 위의 데이터를 반환(확인)하는것
+	##### Stack ADT : 
+	
+	- 1. push(data) -> None:"스텍에 쌓는다"
+	- 2. pop() -> data: 맨위 데이터 삭제 -> 삭제된 데이터 반환
+	- 3. empty() -> bool
+	- 4. peek() -> data : 삭제는 아니고 맨 위의 데이터를 반환(확인)하는것
 
-#### queue ADT :
-- 1. enqueue(data) -> None: "insert" 맨 뒤에 추가
-- 2. dequeue() -> data : 맨앞 데이터 삭제 -> 삭제된 데이터 반환
-- 3. empty() -> bool
-- 4. peek() -> data : 삭제는 하지 않고 맨 앞 데이터 반환
-
-- stack을 이용한 계산기 만들기
+	##### queue ADT :
+	
+	- 1. enqueue(data) -> None: "insert" 맨 뒤에 추가
+	- 2. dequeue() -> data : 맨앞 데이터 삭제 -> 삭제된 데이터 반환
+	- 3. empty() -> bool
+	- 4. peek() -> data : 삭제는 하지 않고 맨 앞 데이터 반환
+	
+	- stack을 이용한 계산기 만들기
 
 ### tree
 
