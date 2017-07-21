@@ -289,14 +289,35 @@ if __name__ == "__main__":
 ### tree
 
 - binary tree
-- binary search tree
-- (균형 이진트리)
+- binary search tree(BST)
+- 균형 이진트리(self balancing binary search tree)-BST의 맹점 보완
+	- AVL 트리
+	- 2-3-4 트리
+	- 블랙레드 트리
+
 
 
 ---
 
 
 ## algorithm
+
+### 단순 알고리즘
+
+1. Bubble Sort(버블정렬) - O(n^2)
+2. Insertion Sort(삽입정렬)
+3. Selection Sort(선택정렬)
+
+### Divide and Conquer(분할정복기법)
+
+> 해결할수 없는 문제를 정리(divide)해서 해결(conquer)하는 것
+
+1. Quick Sort(퀵소트)
+
+
+2. Merge Sort(머지소트)
+
+
 
 ### sorting
 
@@ -349,3 +370,45 @@ if __name__ == "__main__":
 ---
 
 
+## Interpreter Language *vs* Compiler Language
+
+### Compiler Language:
+	
+- 잘못된 정의: 최종 오브젝트 코드가 기계어
+
+- 컴파일언어는 컴파일 타일과 런타임이 존재
+
+- 컴파일은 소스코드를 받아서 컴파일을 한다 이는 컴파일러와 어샘플러를 만든다.지금은 컴파일러와 어샘블러를 합해서 컴파일러로 통일한다. 
+	- 오브젝트코드는 기계어(instruction)와 바이트코드로 구성 여기서 C 언어는 이미 기계어가 나왔기 때문에 바로 input을 .exe를 통해 런타임을 실행.
+	- 바이트 코드(자바)는 VM(VirtualMachine)에서 기계어로 바뀌어 input을 .class로 받고 실행이된다.
+
+- 즉 컴파일 언어는 컴파일 타일을 가지면 컴파일 언어로 정의한다. 컴파일러는
+
+컴파일러 -> 바이트코드 -> vm -> 결과
+
+
+### Interpreter Language: 
+
+- 잘못된 정의: 최종 오브젝트 코드가 기계어가 아니다
+
+- 인터프리터 언어는 오로지 런타임만 존재
+
+
+- **인터프리터언어(퍄이썬)의 경우 input과 소스코드를 동시에 분석한다.**컴파일러 -> 바이트코드 ->vm -> 결과
+
+input과 소스를 언제 받느냐에 따라 구분된다고 볼 수 있다.
+
+
+#### Lexer(낱말분석)
+
+- 프로그램언어를 처리하는 최초의 단계
+- AST
+- Lexer가 Parser를 가지면 컴파일
+
+
+#### Parser(구문분석)
+
+- 문장을 그것을 이루고 있는 구성 성분으로 분해하고 그들 사이의 위계 관계를 분석하여 문장의 구조를 결정하는 것을 말한다.
+- C: 기계어
+- Java: 바이트코드
+- python : 바이트코드
